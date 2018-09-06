@@ -17,11 +17,20 @@ namespace WebApi.Test.Services
     public class ProductServiceTest
     {
         private List<Product> products;
+        DataContext Db;
 
         [TestInitialize]
         public void Init()
         {
             products = TestData.GetData().ToList();
+            var options = new DbContextOptionsBuilder<DataContext>().EnableSensitiveDataLogging(true).UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
+            Db = new DataContext(options);            
+        }
+        [TestCleanup]
+        public void Clean()
+        {
+            products=null;
+            Db=null;
         }
 
         [TestMethod()]
@@ -29,11 +38,10 @@ namespace WebApi.Test.Services
         {
             //given
             int countFilter = 5;
-            var options = new DbContextOptionsBuilder<DataContext>().UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
-            var db = new DataContext(options);
-            db.Products.AddRange(products);
-            db.SaveChanges();
-            var sut = new ProductService(db);
+
+            Db.Products.AddRange(products);
+            Db.SaveChanges();
+            var sut = new ProductService(Db);
 
             //when
             var productList = sut.GetProducts();
@@ -49,11 +57,9 @@ namespace WebApi.Test.Services
             //given
             int countFilter = 5;
             products.AddRange(TestData.GetData(countFilter, "apple"));
-            var options = new DbContextOptionsBuilder<DataContext>().UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
-            var db = new DataContext(options);
-            db.Products.AddRange(products);
-            db.SaveChanges();
-            var sut = new ProductService(db);
+            Db.Products.AddRange(products);
+            Db.SaveChanges();
+            var sut = new ProductService(Db);
 
             //when
             var productList = sut.GetProducts("apple");
