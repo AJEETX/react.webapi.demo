@@ -91,3 +91,6 @@ For better experience please chrome browser
 
 Having any trouble? Please read out this [documentation](https://github.com/AJEETX/sample.demo/blob/master/README.md) or [contact](mailto:ajeetkumar@email.com) and to sort it out.
 
+ [![HitCount](http://hits.dwyl.io/ajeetx/sample.demo/projects/1.svg)](http://hits.dwyl.io/ajeetx/sample.demo/projects/1) | ![GitHub contributors](https://img.shields.io/github/contributors/ajeetx/sample.demo.svg?style=plastic)|
+ | --- | --- |
+
