@@ -10,7 +10,6 @@ using WebApi.Identity;
 
 namespace WebApi.Controllers
 {
-    [Authorize]
     [Route("[controller]")]
     public class UsersController : Controller
     {
@@ -25,8 +24,9 @@ namespace WebApi.Controllers
             _tokeniser = tokeniser;
         }
 
-        [AllowAnonymous]
         [HttpPost("authenticate")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
         public IActionResult Authenticate([FromBody]UserDto userDto)
         {
             try
@@ -46,8 +46,9 @@ namespace WebApi.Controllers
             }            
         }
 
-        [AllowAnonymous]
         [HttpPost("register")]
+        [ProducesResponseType(200, Type = typeof(string))]
+        [ProducesResponseType(400)]
         public IActionResult Register([FromBody]UserDto userDto)
         {
             var user = _mapper.Map<User>(userDto);
@@ -55,7 +56,7 @@ namespace WebApi.Controllers
             try
             {
                 _userService.Create(user, userDto.Password);
-                return Ok();
+                return Ok( "registered as username"+user.Username);
             }
             catch (AppException ex)
             {

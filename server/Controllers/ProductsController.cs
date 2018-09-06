@@ -20,6 +20,8 @@ namespace WebApi.Controllers
         }
 
         [HttpGet("{q?}")]
+        [ProducesResponseType(200, Type = typeof(List<Product>))]
+        [ProducesResponseType(400)]
         public IActionResult GetProducts(string q = "")
         {
             try
@@ -36,6 +38,7 @@ namespace WebApi.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType(200, Type = typeof(Product))]
         [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
         public IActionResult GetProduct(int id)
         {
             try
@@ -70,6 +73,9 @@ namespace WebApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [ProducesResponseType(200, Type = typeof(string))]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
         public IActionResult PutProduct(int id, [FromBody]Product product)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -86,6 +92,8 @@ namespace WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [ProducesResponseType(200, Type = typeof(string))]
+        [ProducesResponseType(400)]
         public IActionResult DeleteProduct(int id)
         {
             try
