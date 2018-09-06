@@ -10,7 +10,7 @@ namespace WebApi.Test.SampleData
         public static IEnumerable<Product> GetData(int count = 5, string brand = "")
         {
             var products=new Faker<Product>()
-            .RuleFor(id=>id.Id,f=>f.UniqueIndex)
+            .RuleFor(id=>id.Id,f=>f.Random.Int())
             .RuleFor(d=>d.Description,f => string.Join(", ", f.Lorem.Words()))
             .RuleFor(b=>b.Brand,f=>string.IsNullOrEmpty(brand)? f.Lorem.Word():brand)
             .RuleFor(m=>m.Model,f=>f.Lorem.Word());
