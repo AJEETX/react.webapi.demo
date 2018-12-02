@@ -1,7 +1,7 @@
 # reactjs plus .net core webapi crud react.webapi  
 
 
-[![.Net Framework](https://img.shields.io/badge/DotNet-2.1-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1) |[![Node](https://img.shields.io/badge/NodeJs-blue.svg?style=plastic)](https://nodejs.org/en/download/) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/react.webapi.demo.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/react.webapi.demo.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/react.webapi.demo.svg) 
+[![.Net Framework](https://img.shields.io/badge/DotNet-2.1_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1) |[![Node](https://img.shields.io/badge/Node-Js-blue.svg?style=plastic)](https://nodejs.org/en/download/) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/react.webapi.demo.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/react.webapi.demo.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/react.webapi.demo.svg) 
 | --- | ---          | ---        | ---      | ---        | 
 
 ---------------------------------------
@@ -11,11 +11,11 @@
 The repository consists of projects as below:
 
 
-| # |Project Name | Project detail | location|
-| ---| ---  | ---           | ---          |
-| 1 | WebApi | Asp.Net Core2 WebApi as backend  |  server folder |
-| 2 | WebApi.Test | Unit Test for webapi |  test folder |
-| 3 | reactjs | reactjs in front end   | client folder |
+| # |Project Name | Project detail | location| Environment |
+| ---| ---  | ---           | ---          | --- |
+| 1 | WebApi | Asp.Net Core2 WebApi as backend  |  server folder | [![.Net Framework](https://img.shields.io/badge/DotNet-2.1_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1)|
+| 2 | WebApi.Test | Unit Test for webapi |  test folder | [![.Net Framework](https://img.shields.io/badge/DotNet-2.1_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1)| 
+| 3 | reactjs | reactjs in front end   | client folder | [![Node](https://img.shields.io/badge/Node-Js-blue.svg?style=plastic)](https://nodejs.org/en/download/) |
 
 ### Summary
 
@@ -31,21 +31,22 @@ The overall objective of the applications :
 
 ##### Environment Setup detail
 
->   1. Download/install [![.Net Framework](https://img.shields.io/badge/DotNet-2.1-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1) to run webapi project
+> Download/install   	
+>	1.	[![.Net Framework](https://img.shields.io/badge/DotNet-2.1_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1) to run webapi project
 >   
->   2. Download/install **[Node](https://nodejs.org/en/download/)** to run the react.webapi.demo [front end] application
+>   2. [![Node](https://img.shields.io/badge/Node-Js-blue.svg?style=plastic)](https://nodejs.org/en/download/) to run the react.webapi.demo [front end] application
 >   
->	3. Download/install **[Visual Studio Code](https://code.visualstudio.com/)** to run/debug the applications
+>	3. [![VSCode](https://img.shields.io/badge/VS-Code-blue.svg?style=plastic)](https://code.visualstudio.com/) to run/debug the applications
 >	
->   4. Download/install **[git bash](https://git-scm.com/downloads)** and configure witin Visual Studio Code by putting `"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"` in the **users setting**.Please verify the location of the `bash.exe` and modify as per its location
->   5. In Visual Studio Code, please install a **[C# extension](https://github.com/OmniSharp/omnisharp-roslyn)**
+>   4. [![git](https://img.shields.io/badge/git-bash-blue.svg?style=plastic)](https://git-scm.com/downloads) and configure witin Visual Studio Code by putting `"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"` in the **users setting**.Please verify the location of the `bash.exe` and modify as per its location
+>   5. In Visual Studio Code, please install a [![c#](https://img.shields.io/badge/cSharp-extension-blue.svg?style=plastic)](https://github.com/OmniSharp/omnisharp-roslyn)
 >   
 
 >   
 
 ##### Project Setup detail
 
->   1. Please clone or download the repository from **[github](https://github.com/AJEETX/react.webapi.demo)**
+>   1. Please clone or download the repository from [![github](https://img.shields.io/badge/git-hub-blue.svg?style=plastic)](https://github.com/AJEETX/react.webapi.demo) 
 >   
 >   2. Create a folder and place the downloaded repository
 >   3. Open **Visual Studio Code** and open the newly created folder where the repository is downloaded
