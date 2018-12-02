@@ -1,7 +1,7 @@
-# reactjs plus .net core webapi crud sample  
+# reactjs plus .net core webapi crud react.webapi  
 
 
-[![.Net Framework](https://img.shields.io/badge/DotNet-2.1-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1) |[![Node](https://img.shields.io/badge/NodeJs-blue.svg?style=plastic)](https://nodejs.org/en/download/) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/sample.demo.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/sample.demo.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/sample.demo.svg) 
+[![.Net Framework](https://img.shields.io/badge/DotNet-2.1-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1) |[![Node](https://img.shields.io/badge/NodeJs-blue.svg?style=plastic)](https://nodejs.org/en/download/) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/react.webapi.demo.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/react.webapi.demo.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/react.webapi.demo.svg) 
 | --- | ---          | ---        | ---      | ---        | 
 
 ---------------------------------------
@@ -15,7 +15,7 @@ The repository consists of projects as below:
 | ---| ---  | ---           | ---          |
 | 1 | WebApi | Asp.Net Core2 WebApi as backend  |  server folder |
 | 2 | WebApi.Test | Unit Test for webapi |  test folder |
-| 3 | sample.demo | reactjs in front end   | client folder |
+| 3 | reactjs | reactjs in front end   | client folder |
 
 ### Summary
 
@@ -33,7 +33,7 @@ The overall objective of the applications :
 
 >   1. Download/install **[Dotnet core2.1](https://www.microsoft.com/net/download/dotnet-core/2.1)** to run webapi project
 >   
->   2. Download/install **[Node](https://nodejs.org/en/download/)** to run the sample.demo [front end] application
+>   2. Download/install **[Node](https://nodejs.org/en/download/)** to run the react.webapi.demo [front end] application
 >   
 >	3. Download/install **[Visual Studio Code](https://code.visualstudio.com/)** to run/debug the applications
 >	
@@ -45,7 +45,7 @@ The overall objective of the applications :
 
 ##### Project Setup detail
 
->   1. Please clone or download the repository from **[github](https://github.com/AJEETX/sample.demo)**
+>   1. Please clone or download the repository from **[github](https://github.com/AJEETX/react.webapi.demo)**
 >   
 >   2. Create a folder and place the downloaded repository
 >   3. Open **Visual Studio Code** and open the newly created folder where the repository is downloaded
@@ -70,7 +70,7 @@ The overall objective of the applications :
 >   
 >   3. To restore the dependencies, type `npm install` on the terminal
 >   
->   4. Now in order to run the sample.demo (front end application), type `npm start` on the terminal
+>   4. Now in order to run the react.webapi.demo (front end application), type `npm start` on the terminal
 >   
 >   5. Shortly a browser shall open with url as `localhost:8080`
 
@@ -89,8 +89,8 @@ For better experience please chrome browser
 
 ### Support or Contact
 
-Having any trouble? Please read out this [documentation](https://github.com/AJEETX/sample.demo/blob/master/README.md) or [contact](mailto:ajeetkumar@email.com) and to sort it out.
+Having any trouble? Please read out this [documentation](https://github.com/AJEETX/react.webapi.demo/blob/master/README.md) or [contact](mailto:ajeetkumar@email.com) and to sort it out.
 
- [![HitCount](http://hits.dwyl.io/ajeetx/sample.demo/projects/1.svg)](http://hits.dwyl.io/ajeetx/sample.demo/projects/1) | ![GitHub contributors](https://img.shields.io/github/contributors/ajeetx/sample.demo.svg?style=plastic)|
+ [![HitCount](http://hits.dwyl.io/ajeetx/react.webapi.demo/projects/1.svg)](http://hits.dwyl.io/ajeetx/react.webapi.demo/projects/1) | ![GitHub contributors](https://img.shields.io/github/contributors/ajeetx/react.webapi.demo.svg?style=plastic)|
  | --- | --- |
 
