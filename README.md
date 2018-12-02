@@ -31,7 +31,7 @@ The overall objective of the applications :
 
 ##### Environment Setup detail
 
->   1. Download/install **[Dotnet core2.1](https://www.microsoft.com/net/download/dotnet-core/2.1)** to run webapi project
+>   1. Download/install [![.Net Framework](https://img.shields.io/badge/DotNet-2.1-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1) to run webapi project
 >   
 >   2. Download/install **[Node](https://nodejs.org/en/download/)** to run the react.webapi.demo [front end] application
 >   
